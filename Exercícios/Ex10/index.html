@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Responsivas</title>
+</head>
+    <body>
+        <h1>Imagens Responsivas em HTML</h1>
+        <p>Altere o tamanho da largura de sua tela para ver o efeito</p>
+        <picture>
+            <source media="(max-width: 750px)" srcset="imagens/pequena.jpg" type="image/jpg">
+            <source media="(max-width: 1050px)" srcset="imagens/media.jpg" type="image/jpg">
+            <img src="imagens/grande.jpg" alt="Imagem Grande">
+        </picture>
+        <h1>Reproduzindo Áudios</h1>
+        <p>Abaixo você pode reproduzir um audio.</p>
+        <audio preload="metadata" autoplay controls loop>
+            <source src="media/capitulo-1.mp3" type="audio/mpeg">
+            <source src="media/capitulo-1.ogg" type="audio/ogg">
+            <source src="media/capitulo-1.wav" type="audio/wav">
+            <p>Infelizmente seu navegador não suporta audios. Faça o download do áudio <a href="media/capitulo-1.mp3">AQUI</a></p>
+        </audio>
+    </body>
+</html>

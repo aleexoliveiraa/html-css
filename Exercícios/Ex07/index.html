@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+    <style>
+        mark {
+            background-color: limegreen;
+        }
+    </style> <!--Nesete caso o estilo se aplica a todo o documento-->
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nesta frase temos um <b>termo em negrito</b> usando a tag B (Não Semântica)</p>
+    <p>Nesta frase há um <strong>termo em negrito</strong> usando a tag STRONG (Semântica)</p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase temos um <i>termo em ênfase</i> com a tag i (Não Semântica)</p>
+    <p>Nesta frase termo um <em>termo em destaque</em> utilizando a tag EM (Semântica)</p>
+    <h2>Texto Marcado</h2>
+    <p>Podemos também criar <mark>um texto marcado</mark> utilizando a tag MARK.</p>
+    <p>Neste outro parágrafo tenho <mark>um texto marcado</mark> no final.</p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Neste parágrafo temos um <big>texto grande</big> e <small>um texto pequeno</small> como referência.</p>
+    <h2>Texto deletado / tachado</h2>
+    <p>Podemos criar <del>um texto deletado</del> com a tag DEL</p>
+    <h2>Texto Inserido</h2>
+    <p>Podemos criar <ins>um texto inserido</ins> com a tag INS.</p>
+    <p>Podemos também utilizar a tag U (Não Semântico) para deixar <u>o texto sublinhado</u></p>
+    <h2>Texto Sobre-escrito</h2>
+    <p>POdemos deixar o texto sobre-escrito com a tag SUP: x<sup>20</sup>+3</p>
+    <h2>Texto Subescrito</h2>
+    <p>Ou podemos deixá-lo subescrito com a tag SUB: H<sub>2</sub>O</p>
+    <h2>Código-fonte / Pré-formatado</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em JavaScript</p>
+    <pre>
+        <code>
+        num = int(input('Digite um número: '))
+        if num % 2 == 0:
+            print(f'{num} é PAR')
+        else:
+            print(f'{num} é ÍMPAR)
+        </code>
+    </pre>
+    <h2>Citações</h2>
+    <h3>Citação Simples</h3>
+    <p>Como dizia um amigo: <q>O computador não passa de um amigo burro muito rápido</q></p>
+    <h3>Citação composta</h3>
+    <p>De acorodo com Isaac Newton:</p>
+    <blockquote cite="https://canaltech.com.br/espaco/por-que-a-gravidade-nos-puxa-para-baixo-192169/">
+        Ao observar a queda da famosa maçã, ele percebeu que a Lua, por exemplo, estava em constante queda em direção à Terra, e não "presa" no céu. Como o planeta tem superfície curva, a queda nunca ocorre de fato.
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascating Style Sheets">CSS</abbr> e estou adorando.</p>
+</body>
+</html>
