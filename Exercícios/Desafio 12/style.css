@@ -15,8 +15,8 @@
 
 /* Criando as variáveis */
 :root {
-    --font-padrao: 'Letters', sans-serif;
-    --fonte-destaque: 'Hug', sans-serif;
+    --font-padrao: 'Letters', cursive;
+    --fonte-destaque: 'Hug', cursive;
 
     --cor1: #F2F2F2;
     --cor2: #F2D0A7;
@@ -78,9 +78,13 @@ section {
     font-family: var(--font-padrao);
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;
+    line-height: 1.5em;
     font-size: 2em;
     padding-left: 40px;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -88,21 +92,32 @@ section.normal {
     color: black;
 }
 
+/* Configurando as sessões com imagens */
+
 section.imagem {
     background-color: #592E15;
     color: var(--cor1);
+    box-shadow: inset 6px 6px 15px 0px rgba(0, 0, 0, 0.596);
+    background-size: cover;
+    background-attachment: fixed;
 }
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.192);
-    width: 400px;
+    background-color: rgba(0, 0, 0, 0.562);
+    display: inline-block;
     border-radius: 15px;
-    padding: 15px;
-    padding-left: 50px;
+    padding: 20px;
 }
 
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: left center;
+    
+}
 
-
-
+section#img02 {
+    background-image: url(imagens/background003.jpg);
+    background-position: right center;
+}
 
 /* Configurando o rodapé */
 
