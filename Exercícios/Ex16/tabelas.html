@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo com Tabelas</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: separate; /* Define se as células terão espaço entre si*/
+
+        }
+
+        th{
+            background-color: bisque;
+            font-weight: bold;
+            padding: 8px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center; /* ALinhamento Horizontal */
+            vertical-align: middle; /* Alinhamento Vertical */
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+
+    <table>
+        <tr> <!-- Linha do Cabeçalho-->
+            <th>Título 1</th> <!--Cabeçalho-->
+            <th>Título 2</th> <!--Cabeçalho-->
+            <th>Título 3</th> <!--Cabeçalho-->
+        </tr>
+        <tr> <!--Primeira Linha-->
+            <td rowspan="2">A1</td> <!--Mesclagem de coluna-->
+            <td>B2</td>
+            <td>C3</td>
+        </tr>
+
+        <tr> <!--Segunda Linha-->
+            
+            <td>B2</td>
+            <td>C3</td>
+        </tr>
+
+        <tr> <!--Terceira Linha-->
+            <td>A1</td>
+            <td colspan="2">B2</td> <!-- Mesclagem de linha-->
+            
+        </tr>
+
+        <tr> <!--Quarta Linha-->
+            <td>A1</td>
+            <td>B2</td>
+            <td>C3</td>
+        </tr>
+    </table>
+</body>
+</html>
